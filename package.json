@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React VideoCall App",
   "scripts": {
-    "build": "cd client && webpack --config webpack-prod.config.js",
+    "build": "cd client && webpack --config webpack-dev.config.js",
     "start": "node server/index.js",
     "watch:client": "webpack-dev-server --config client/webpack-dev.config.js",
     "watch:server": "nodemon server/index.js",
@@ -13,6 +13,7 @@
     "@babel/core": "7.10.2",
     "@babel/preset-env": "7.10.2",
     "@babel/preset-react": "7.10.1",
+    "axios": "0.20.0",
     "babel-loader": "8.1.0",
     "bluebird": "3.7.2",
     "bootstrap-sass": "3.4.1",
@@ -29,6 +30,7 @@
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0",
     "sass-loader": "8.0.2",
     "socket.io": "2.3.0",
     "socket.io-client": "2.3.0",
@@ -47,10 +49,6 @@
     "eslint-plugin-react": "7.20.0",
     "nodemon": "2.0.4",
     "webpack-dev-server": "3.11.0"
-  },
-  "engines": {
-    "node": "12.15.0",
-    "yarn": "1.22.0"
   },
   "repository": {
     "type": "git",
